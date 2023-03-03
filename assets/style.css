@@ -1,0 +1,93 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-family: 'Dosis', sans-serif;
+}
+
+h1 {
+	margin-bottom: 1em;
+	color: rgb(209, 74, 96);
+}
+
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.center {
+	text-align: center;
+}
+
+.container {
+	max-width: 1000px;
+	margin-inline: auto;
+}
+
+.cards {
+	margin-inline: -1rem;
+	/* background-color: crimson; */
+}
+
+.card	{
+	float: left;
+	margin: 1.5rem 1rem;
+	padding-right: 1rem;
+	/* height: 100px; */
+	/* width: calc(100% / 3 - 2 * 1rem); */
+	width: calc((100% - 6 * 1rem) / 3);
+	min-width: 280px;
+	background-color: black;
+	color: white;
+	box-shadow: 0 0 10px black;
+}
+
+.card:hover {
+	cursor: pointer;
+	box-shadow: 0 0 20px salmon;
+}
+
+/* .card:nth-child(even) {
+	background-color: gold;
+} */
+
+.card img {
+	float: left;
+	margin-right: 1rem;
+	height: 100px;
+	width: 100px;
+	object-fit: cover;
+	object-position: center;
+}
+
+.card .name {
+	margin-top: .5rem;
+	margin-bottom: .3rem;
+	font-size: 1.3rem;
+	font-weight: bold;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.card .job {
+	margin-bottom: .3rem;
+}
+
+.card .email  {
+	text-decoration: none;
+	color: aquamarine;
+}
+
+.card .email:hover {
+	color: salmon;
+	text-decoration: underline;
+}
+
+.lorems {
+	background-color: cornflowerblue;
+}
